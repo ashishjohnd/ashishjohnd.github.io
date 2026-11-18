@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashish John- Web Developer</title>
     <meta name="description" content="Portfolio of Ashish John, Web Developer specializing in modern web technologies">
-    <meta name="keywords" content="web developer, react, node.js, mongodb, portfolio, ashish john denzil">
+    <meta name="keywords" content="web developer, react, node.js, mongodb, portfolio, ashish john">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -556,48 +556,50 @@
             <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9" alt="Hotel Booking System" class="project-image">
+                    <img src="https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9" alt="Hotel Booking Backend" class="project-image">
                     <div class="project-content">
-                        <h3>Hotel Booking System</h3>
-                        <p>A comprehensive hotel reservation platform with room management, booking functionality, and user authentication for seamless hospitality management.</p>
+                        <h3>Hotel Booking Backend</h3>
+                        <p>A secure hotel booking backend with room management, reservations, user authentication, admin operations, and booking history.</p>
                         <div class="tech-tags">
-                            <span class="tech-tag">React</span>
                             <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
                             <span class="tech-tag">Express.js</span>
-                        </div>
-                        <a href="https://github.com/ashishajce/hotelbooking" target="_blank" rel="noopener noreferrer" class="project-link">
-                            View Project <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3" alt="Student Attendance System" class="project-image">
-                    <div class="project-content">
-                        <h3>Student Attendance System</h3>
-                        <p>An intelligent attendance management system for educational institutions with real-time tracking and comprehensive reporting features.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
                             <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">JWT</span>
                         </div>
-                        <a href="https://github.com/ashishajce/sas" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <a href="https://github.com/ashishjohnd/hotelbooking" target="_blank" rel="noopener noreferrer" class="project-link">
                             View Project <i class="fas fa-external-link-alt"></i>
                         </a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="https://images.pexels.com/photos/5475750/pexels-photo-5475750.jpeg" alt="Portfolio Website" class="project-image">
+                    <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3" alt="HomeService" class="project-image">
                     <div class="project-content">
-                        <h3>Portfolio Website</h3>
-                        <p>A modern, responsive portfolio website showcasing web development skills with smooth animations and clean design principles.</p>
+                        <h3>HomeService</h3>
+                        <p>A web-based platform connecting users with household service providers for service browsing, bookings, provider profiles, ratings, and reviews.</p>
                         <div class="tech-tags">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">TailwindCSS</span>
-                            <span class="tech-tag">Framer Motion</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
                         </div>
-                        <a href="https://github.com/ashishjohnd" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <a href="https://github.com/ashishjohnd/HomeService" target="_blank" rel="noopener noreferrer" class="project-link">
+                            View Project <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.pexels.com/photos/5475750/pexels-photo-5475750.jpeg" alt="EvoTask" class="project-image">
+                    <div class="project-content">
+                        <h3>EvoTask</h3>
+                        <p>An offline-first Android productivity app for managing tasks, focus timers, notes, progress tracking, and personal customization.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Expo</span>
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">Offline-first</span>
+                        </div>
+                        <a href="https://github.com/ashishjohnd/EvoTask" target="_blank" rel="noopener noreferrer" class="project-link">
                             View Project <i class="fas fa-external-link-alt"></i>
                         </a>
                     </div>
@@ -634,7 +636,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>© 2026 Ashish John. Crafted with ❤️ and modern web technologies.</p>
+            <p>© <span id="copyright-year"></span> Ashish John. Crafted with ❤️ and modern web technologies.</p>
         </div>
     </footer>
 
@@ -682,6 +684,8 @@
         window.addEventListener('load', () => {
             document.body.style.opacity = '1';
         });
+
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
